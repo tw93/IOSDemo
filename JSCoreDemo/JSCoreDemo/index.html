@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .btn {
+      width: 100%;
+      height: 60px;
+      background: #C64744;
+      font-size: 20px;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+
+<button type="button" class="btn" onclick="jsCallNative('Hello iOS', 'I am JS');" />调用OC代码</button>
+  </div>
+  
+  <script type="text/javascript">
+    var nativeCallJS = function (parameter) {
+      alert(parameter);
+    };
+  </script>
+</body>
+
+</html>
